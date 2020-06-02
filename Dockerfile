@@ -18,10 +18,10 @@ RUN apt-get update \
 
 
 #ADD ./* /tmp
-WORKDIR /var/lib/jenkins/workspace/CICD_process_github/CICD_process
+WORKDIR /var/lib/jenkins/workspace/SamplePythonProject
 
 ### Copy application code into workspace dir ###
-COPY . /var/lib/jenkins/workspace/CICD_process_github/CICD_process
+COPY . /var/lib/jenkins/workspace/SamplePythonProject
 
 # Install app dependencies
 RUN pip3 install -r requirements.txt
